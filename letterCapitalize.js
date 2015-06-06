@@ -1,26 +1,20 @@
-var sentence = 'its a small world'
+function letterCapitalize (sentence) {
 
-var words = sentence.split(" ")//.join("a");
+	var words = sentence.split(" ")
 
-// console.log(words[0] + "a" + words[1] + "a" + words[2])
+	var allWords = [];
 
-var allWords = [];
+	for(var i = 0; i<words.length; i++){
 
-for(var i = 0; i<words.length; i++){
+	   allWords.push(words[i][0].toUpperCase().concat(words[i].slice(1))) 
 
-allWords.push(words[i][0].toUpperCase().concat(words[i].slice(1))) 
+	}
+
+	var allTogether = allWords.join(" ")
+
+	return allTogether;
 
 }
 
-console.log(allWords)
+console.log (letterCapitalize("its a small world"));
 
-var allTogether = allWords.join(" ")
-console.log(allTogether)
-
-// console.log(words)
-
-// consol e.log(sentence.length)
-
-// console.log(sentence.slice(1,3))
-
-// var str = str.toUpperCase()
