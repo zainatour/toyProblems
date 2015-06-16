@@ -7,11 +7,6 @@ given word
 //eg: wordScore("hello")
 // => 8
 
-function wordScore (word) {
-    //your code here
-    return score;
-}
-
 var scores = {
     A: 1,
     B: 3,
@@ -40,3 +35,23 @@ var scores = {
     Y: 4,
     Z: 10
 }
+
+
+function wordScore (word) {
+    
+    var score = 0
+
+    word = word.split("");
+
+    for (var i = 0; i < word.length; i++) {
+        
+        score += scores[word[i]];
+
+    };
+
+    return score;
+
+}
+
+console.log(wordScore("XANDER"));
+
