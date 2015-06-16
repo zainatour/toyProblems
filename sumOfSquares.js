@@ -2,7 +2,19 @@
 //eg:
 // sumOfSquares([1,2,3])
 // => 14
+
 function sumOfSquares (numbers) {
-    //your code
-    return result;
+
+	var multiplier = 0;
+    
+	for (var i = 0; i < numbers.length; i++) {
+
+		multiplier += (numbers[i]*numbers[i]);
+
+	}
+
+	return multiplier;
 }
+
+console.log(sumOfSquares([1,2,3,4,5,6,7]));
+
