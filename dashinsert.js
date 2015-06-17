@@ -15,6 +15,4 @@ return output;
 
 }
 
-console.log(dashInsert(70982));
-
 
