@@ -9,5 +9,8 @@
 //>3
 
 function forEach (list, fn) {
-    //code here
-}
+    
+    for (var i = 0; i < list.length; i++) {
+    	fn(list[i]);
+    }
+};
