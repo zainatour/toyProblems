@@ -8,5 +8,14 @@
 // factorial(5) = 120
 //
 function factorial (x) {
-    //code
+    
+    var calculate = x;
+
+    for (var i = 1; i < x; i++) {
+    	calculate *= (x-i)
+    };
+
+    return calculate;
 }
+
+console.log(factorial(20))
